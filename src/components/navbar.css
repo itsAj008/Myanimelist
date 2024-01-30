@@ -1,0 +1,248 @@
+.navbar {
+  position: relative;
+}
+
+.navbar ul {
+  display: inline-flex;
+  width: auto;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li .anchortag .navlogo {
+  width: 30px;
+  display: none;
+}
+.navbar ul li .anchortag {
+  text-decoration: none;
+}
+.navbar ul li .anchortag .link-text {
+  color: rgba(255, 255, 255, 0.753);
+  font-size: larger;
+}
+.navbar-list .page-logo {
+  color: #1bffe442;
+  margin-right: 30px;
+}
+.navbar-list .page-logo:hover {
+  color: #1bffe49a;
+  transform: perspective(500px) translate3d(2px, 0, 30px);
+}
+.searchBarandlogo {
+  display: inline-flex;
+  position: absolute;
+  top: 100px;
+  left: 730px;
+}
+
+#searchBar {
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  /* margin-top: 11px; */
+  border-radius: 8px;
+  border: none;
+}
+
+/* .searchlogo {
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+} */
+
+.searchlogo {
+  color: white;
+  background-color: #11665c;
+  margin-left: 10px;
+  font-size: 15pxpx;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.searchlogo:hover {
+  cursor: pointer;
+  transform: perspective(500px) translate3d(1px, 0, 10px);
+  color: #7ceadd;
+}
+
+.navbar .Profile {
+  display: inline-flex;
+  position: relative;
+  margin: 28px 30px auto auto;
+  float: right;
+  padding-bottom: 10px;
+}
+.navbar .Profile a {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.page-logo {
+  width: 60px;
+  height: auto;
+  color: #11665c;
+  margin: 0;
+}
+
+.navbar ul li .link-text:hover {
+  color: rgba(255, 255, 255, 0.932);
+}
+
+.navbar ul li .anchortag {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDisplay {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
+  min-width: 100px;
+  width: fit-content;
+  padding: 12px;
+  height: fit-content;
+  border-radius: var(--rounding-400);
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  display: none;
+}
+.profileDisplay p {
+  padding: 5px;
+}
+.navbar .Profile a:hover {
+  color: #11665c;
+}
+
+.navbar .Profile:hover .profileDisplay {
+  display: block;
+}
+
+.profileDisplay .choosefile {
+  margin-bottom: 5px;
+}
+
+.photoaddbtn {
+  color: white;
+  background-color: #11665c;
+  font-size: 15pxpx;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.photoaddbtn:hover {
+  cursor: pointer;
+  transform: perspective(500px) translate3d(1px, 0, 10px);
+  color: #7ceadd;
+}
+
+@media (max-width: 1150px) {
+  .navbar .navbar-list {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 70px;
+    background-color: #2b978a;
+    gap: 20px;
+    margin: 0;
+    transition: width 600ms ease;
+  }
+
+  .active {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #69b1a8;
+  }
+  .searchBarandlogo {
+    left: 400px;
+  }
+  .navbar .navbar-list .page-logo {
+    margin-right: 0;
+    color: #11665c;
+  }
+
+  .navbar-list .page-logo:hover {
+    color: #1bffe49a;
+  }
+  .navbar ul li .anchortag .navlogo {
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 40px;
+  }
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li .anchortag {
+    height: 70px;
+  }
+  .navbar ul li .anchortag .link-text {
+    display: none;
+  }
+  .navbar ul li .anchortag .navlogo {
+    display: block;
+  }
+  .navbar ul li:first-child {
+    margin-top: 30px;
+  }
+
+  .navbar ul li:last-child {
+    margin-top: auto;
+  }
+
+  .navbar ul li .link-text:hover {
+    border-bottom: none;
+  }
+
+  /* .navbar ul:hover {
+    width: 130px;
+  }
+  .navbar ul li:hover .link-text {
+    display: block;
+  } */
+
+  .navbar ul li .anchortag:hover {
+    background-color: #11665c;
+  }
+  .navbar ul .page-logo-item a:hover {
+    background-color: #2b978a;
+  }
+  .navbar ul li .anchortag:hover .navlogo {
+    color: #2ea698;
+  }
+  .active {
+    background-color: #11665c;
+  }
+}
+
+@media (max-width: 900px) {
+  .searchBarandlogo {
+    width: 50%;
+    left: 270px;
+  }
+
+  .navbar .Profile a {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .searchBarandlogo {
+    width: 55%;
+    left: 170px;
+  }
+}
+
+.active {
+  border-bottom: 3px solid #66c4c4;
+}
